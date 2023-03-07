@@ -66,5 +66,7 @@ export class RedisErrorListener {
 
 这样无需在 `onReady` 中使用 `getAsync` 方法即可自动初始化，并执行 init 方法。
 
+# 自执行代码顺序
 
+当有多个类都标注为@Autoload()时,先执行哪个后执行哪个,并没有明确的说法.使用时最好不要依赖执行的顺序.希望
 
